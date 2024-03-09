@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heaven Generator</title>
+  <link rel="stylesheet" href="altcss.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Havelock+Titling&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 80%;
+      margin-top: 400px;
+    }
+
+    .boxulgeneratoarelor {
+      width: 30%;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @keyframes gradientEffect {
+      0% {
+        background-position: 0% 0%;
+      }
+      100% {
+        background-position: 200% 200%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <img src="Heaven.jpg" width="100">
+    <div class="wrapper">
+      <div class="titlu" data-text="HEAVEN TEXT GENERATOR">
+        <h1  id="titlu">HEAVEN TEXT GENERATOR</h1></div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Casuțele existente -->
+    <div class="boxulgeneratoarelor">
+      <button class="glow-on-hover" onclick="schimbaTextul('text1')" data-target="casuta1">Subscriberi Noi</button>
+      <div class="casutasubs text-container" id="casuta1">
+        <p id="text1">Acesta este un exemplu de text.</p>
+        <button class="buttoncopy" onclick="copiazăTextul('text1', 'casuta1')">Copiaza text</button>
+      </div>
+    </div>
+
+    <div class="boxulgeneratoarelor">
+      <button class="glow-on-hover" onclick="schimbaTextul('text2')" data-target="casuta2">Bundle</button>
+      <div class="casutasubs text-container" id="casuta2">
+        <p id="text2">Acesta este un alt exemplu de text.</p>
+        <button class="buttoncopy" onclick="copiazăTextul('text2', 'casuta2')">Copiaza text</button>
+      </div>
+    </div>
+
+    <div class="boxulgeneratoarelor">
+      <button class="glow-on-hover" onclick="schimbaTextul('text3',)" data-target="casuta3">Dick Compliments</button>
+      <div class="casutasubs text-container" id="casuta3">
+        <p id="text3">Aici avem un alt text diferit.</p>
+        <button class="buttoncopy" onclick="copiazăTextul('text3','casuta3')">Copiaza text</button>
+      </div>
+    </div>
+    <!-- Casuțele existente -->
+  </div>
+
+  <!-- Adaugare spatiu intre seturi -->
+  <div style="margin-top: 20px;"></div>
+
+  <div class="container">
+    <!-- Casuțele noi integrate -->
+    <div class="boxulgeneratoarelor">
+      <button class="glow-on-hover" onclick="schimbaTextul('text4')" data-target="casuta4">Casuta 4</button>
+      <div class="casutasubs text-container" id="casuta4">
+        <p id="text4">Acesta este un exemplu de text.</p>
+        <button class="buttoncopy" onclick="copiazăTextul('text4', 'casuta4')">Copiaza text</button>
+      </div>
+    </div>
+
+    <div class="boxulgeneratoarelor">
+      <button class="glow-on-hover" onclick="schimbaTextul('text5')" data-target="casuta5">Casuta 5</button>
+      <div class="casutasubs text-container" id="casuta5">
+        <p id="text5">Acesta este un alt exemplu de text.</p>
+        <button class="buttoncopy" onclick="copiazăTextul('text5', 'casuta5')">Copiaza text</button>
+      </div>
+    </div>
+
+    <div class="boxulgeneratoarelor">
+      <button class="glow-on-hover" onclick="schimbaTextul('text6',)" data-target="casuta6">Casuta 6</button>
+      <div class="casutasubs text-container" id="casuta6">
+        <p id="text6">Aici avem un alt text diferit.</p>
+        <button class="buttoncopy" onclick="copiazăTextul('text6','casuta6')">Copiaza text</button>
+      </div>
+    </div>
+    <!-- Casuțele noi integrate -->
+  </div>
+
+  <script src="java.js"></script>
+</body>
+</html>
+
+
+
+

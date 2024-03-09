@@ -1,0 +1,849 @@
+body {
+    background: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.95) 50%,  /* Nuanță de negru mai intensă */
+     
+    );
+    background-size: 200% 200%;
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  @font-face{
+    font-family: myFont;
+    src:url(renos.ttf);
+  }
+  
+  h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+ 
+  
+  .header {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .header img {
+    max-width: 100px; /* Adjust the max-width as needed */
+    border-radius: 50%;
+  }
+  
+  .header h1 {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-weight: 300; /* Modificare: folosește o valoare validă pentru font-weight, în loc de '300p' */
+    font-size: 40px;
+    color: #080808;
+    margin-top: 10px;
+  }
+  
+  .boxulgeneratoarelor {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+
+  
+  .casutasubs {
+    background-color: rgb(121, 119, 7);
+    display: inline-flex;
+    color: rgb(0, 0, 0);
+    border: solid;
+    border-radius: 3em;
+    border-color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #D7B669;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #d4af37(61 7% 1%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Adaugă un efect de glow (strălucire) la hover pentru buton */
+.glow-on-hover:hover {
+  box-shadow: 0 0 10px rgba(18, 10, 110, 0.5);body {
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(30, 20, 5, 0.8) 10%,
+    rgba(255, 255, 255, 0.8) 32%,
+    rgba(50, 40, 15, 0.8) 50%,
+    rgba(60, 50, 20, 0.8) 100%
+  );
+  background-size: 200% 200%;
+  animation: gradientEffect 10s infinite linear;
+}
+
+@keyframes gradientEffect {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 200%;
+  }
+}
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg,  #e0ffad, #d4af37, #e0ffad, hsl(62, 67%, 77%));
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.05); /* Sau orice scalare dorești */
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+glow-on-hover:focus:before,
+.glow-on-hover:active:before {
+  transform: scale(1.05); /* Sau orice scalare dorești */
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 200%;
+  }
+}
+
+
+.boxulgeneratoarelor {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+
+  .casutasubs {
+    background-color: rgb(121, 119, 7);
+    display: inline-flex;
+    color: rgb(0, 0, 0);
+    border: solid;
+    border-radius: 3em;
+    border-color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .boxulgeneratoarelor {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .glow-on-hover {
+    position: absolute;
+    top: -40px; /* Ajustează acest număr pentru a schimba distanța între buton și casutasubs */
+    z-index: 2; /* Asigură că butonul este deasupra celorlalte elemente */
+  }
+  
+  .casutasubs {
+    background-color: rgb(121, 119, 7);
+    display: inline-flex;
+    color: rgb(0, 0, 0);
+    border: solid;
+    border-radius: 3em;
+    border-color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .glow-on-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  
+  .casutasubs {
+    background-color: #D7B669;
+    display: inline-flex;
+    color: rgb(0, 0, 0);
+    border: solid;
+    border-radius: 3em;
+    border-color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1; /* Asigură că casutasubs este sub buton */
+  }
+  
+  .boxulgeneratoarelor {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.glow-on-hover {
+  position: relative; /* Schimbăm la relative */
+  display: inline-block; /* Pentru a putea folosi margin */
+  margin-top: 20px; /* Ajustează această valoare pentru a schimba distanța dintre buton și casutasubs */
+  z-index: 2;
+}
+
+.casutasubs {
+  background-color: #D7B669;
+  display: inline-flex;
+  color: rgb(0, 0, 0);
+  border: solid;
+  border-radius: 3em;
+  border-color: rgb(0, 0, 0);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1; /* Asigură că casutasubs este sub buton */
+  padding-top: 100px;
+  padding-inline:50px;
+ 
+}
+
+
+.boxulgeneratoarelor {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .glow-on-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  
+  .casutasubs {
+    background-color: rgb(121, 119, 7);
+    color: rgb(0, 0, 0);
+    border: solid;
+    border-radius: 3em;
+    border-color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: calc(50% + 50px); /* Ajustează această valoare pentru a schimba distanța dintre buton și casutasubs */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+
+  
+  .casutasubs {
+    background-color: rgb(121, 119, 7);
+    color: rgb(0, 0, 0);
+    border: solid;
+    border-radius: 3em;
+    border-color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: calc(50% + 50px); /* Ajustează această valoare pentru a schimba distanța dintre buton și casutasubs */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    min-height: 150px; /* Înălțime minimă */
+    max-height: 200px; /* Înălțime maximă */
+    min-width: 200px; /* Lățime minimă */
+    max-width: 300px; /* Lățime maximă */
+    overflow: auto; /* Adaugă un scrollbar dacă textul depășește înălțimea maximă */
+    white-space: pre-wrap; /* Păstrează spațiile și înlocuiește intrările noi cu un salt de linie */
+  }
+
+
+  .casutasubs {
+    background: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      
+    );
+    color: #fff;
+    border: 2px solid #d4af37; /* Golden border color */
+    border-radius: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: calc(50% + 50px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    min-height: 150px;
+    max-height: 200px;
+    min-width: 200px;
+    max-width: 300px;
+    overflow: auto;
+    white-space: pre-wrap;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 5px; /* Spațiere între text și buton */
+  }
+  
+ 
+  
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  
+
+
+ 
+
+/* CSS */
+.buttoncopy {
+  background: linear-gradient(to bottom right, #D7B669, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.buttoncopy:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.buttoncopy:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+
+
+body {
+  margin: -250px 0 0 0; /* Ajustează marginul pentru a poziționa pagina mai sus */
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.8) 50%,
+
+  );
+  background-size: 200% 200%;
+}
+
+
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+
+
+
+
+
+#casuta2 .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#casuta2 .buttoncopy {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.casutasubs {
+  background-color: rgba(121, 119, 7, 0.7);
+  color: rgb(255, 255, 255);
+  border: solid;
+  border-radius: 10px;
+  border-color: rgb(0, 0, 0);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  justify-content: flex-start; /* Aliniați textul sus */
+  padding: 10px;
+  max-height: 200px;
+  overflow-y: auto; /* Adăugați bara de derulare verticală */
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttoncopy {
+  width: 100%;
+  margin-top: 5px;
+  font-size: 12px; /* Dimensiunea fontului */
+}
+
+
+.buttoncopy {
+  width: 100%;
+  margin-top: auto; /* Schimbați margin-top la auto */
+  font-size: 12px; /* Dimensiunea fontului */
+}
+
+
+
+#casuta1 .buttoncopy,
+#casuta2 .buttoncopy,
+#casuta3 .buttoncopy,
+#casuta4 .buttoncopy,
+#casuta5 .buttoncopy,
+#casuta6 .buttoncopy
+ {
+  width: 100%;
+  margin-top: auto;
+  font-size: 12px;
+  z-index: 1;
+  position: sticky;
+  bottom: 0;
+}
+
+
+
+.boxulgeneratoarelor {
+  width: 50%; /* Ajustează lățimea casetei la 50% */
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.casutasubs {
+  max-height: 700px; /* Ajustează înălțimea maximă a casetei */
+  overflow-y: auto;
+}
+
+
+
+.casutasubs {
+  background-color: #D7B669; /* Schimbarea culorii de fundal */
+  color: white;
+  border: solid;
+  border-radius: 10px;
+  border-color: #D7B669;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+
+.buttoncopy {
+  width: 100%;
+  margin-top: 5px;
+  font-size: 12px;
+  background-color: #D7B669; /* Schimbarea culorii de fundal */
+  color: white;
+}
+  
+
+
+.header h1 {
+  font-family: 'Renos Rough', cursive;
+  color: #D7B669; /* Culoare galbenă */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Umbră ușoară */
+  font-weight: bold; /* Boldness */
+}
+
+
+
+
+body {
+ 
+  background: linear-gradient(45deg, #000000 50%);
+  background-size: 200% 200%;
+  background-color: #000000;
+}
+
+.casutasubs {
+  background-color: #000; /* Negru */
+}
+
+.casutasubs {
+  background-color: #000; /* Negru pentru fundal */
+  color: #D7B669; /* Culoare pentru text */
+}
+
+.glow-on-hover {
+  background-color: #000; /* Culoare pentru fundal */
+  color: #D7B669; /* Negru pentru text */
+}
+
+
+
+
+
+
+
+@font-face {
+  font-family: 'Havelock Titling';
+  src: url('calea/catre/font/HavelockTitling.woff') format('woff'); /* Asigură-te că specifici calea corectă către font */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header .titlu {
+  font-family: 'Havelock Titling', Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #D7B669;
+  margin-top: 10px;
+  font-optical-sizing: 30;
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    .glow-on-hover {
+      background-image: url("data:image/svg+xml,%3Csvg width='2250' height='900' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath fill='%23008060' d='M0 0h2255v899H0z'/%3E%3Ccircle cx='366' cy='207' r='366' fill='%2300A080'/%3E%3Ccircle cx='1777.5' cy='318.5' r='477.5' fill='%2300FDCF'/%3E%3Ccircle cx='1215' cy='737' r='366' fill='%23FF6F61'/%3E%3C/g%3E%3C/svg%3E%0A");
+      background-size: 110% auto;
+      background-position: center;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+}
+
+
+.glow-on-hover{
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-style: italic;
+}
+
+p{
+  font-family:Arial, Helvetica, sans-serif ;
+}
+
+.buttoncopy{
+  font-family:  'Montserrat' ;
+  font-weight: 600;
+}}}
+
+
+
+
+
+
+
+
+.casutasubs {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+
+
+
+.header .titlu  {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: 'Havelock Titling', sans-serif;
+  font-size: 3em;
+  font-weight: 900;
+  letter-spacing: 1px;
+  -webkit-text-stroke: 2px transparent;
+  text-shadow: 0 0 10px #D7B669; /* Adaugă umbrire textului */
+}
+
+.titlu {
+  /* Alte stiluri existente */
+
+  /* Adaugare efect de luminozitate */
+  filter: brightness(1.5); /* Poți ajusta valoarea în funcție de preferințele tale */
+}
+
+.titlu {
+  /* Alte stiluri existente */
+
+  /* Adaugare umbra pentru efect de stralucire */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), /* Adaugă o strălucire albă */
+               2px 2px 4px rgba(0, 0, 0, 0.8);   /* Adaugă o umbră pentru contrast */
+  -webkit-text-stroke: 2px #363833; /* Adaugă un contur de 2px pentru a face textul citet */
+}
+
+
+
+
+
+
+
+
+
+
+
+#titlu {
+  /* Alte stiluri existente */
+  font-family: 'Havelock Titling', sans-serif;
+  /* Adaugare umbra pentru efect de stralucire */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), /* Adaugă o strălucire albă */
+               2px 2px 4px rgba(0, 0, 0, 0.8);   /* Adaugă o umbră pentru contrast */
+
+  -webkit-text-fill-color: transparent; /* Face textul transparent */
+  background-clip: text; /* Permite cliparea background-ului la text */
+
+  /* Adaugă gradient pentru un efect de aur strălucitor */
+  background-image: linear-gradient(45deg, #D7B669, #ffec99);
+  font-weight: 700;
+  letter-spacing: 1px;
+  -webkit-text-stroke: 2px transparent;
+  text-shadow: 0 0 10px #D7B669; /* Adaugă umbrire textului */
+}
+
+
+
+
+.casutasubs {
+  /* Alte stiluri existente */
+  
+  border: 2px solid transparent;
+}
+
+/* Adaugă un border transparent la hover pentru a crea efectul de "strălucire" */
+.casutasubs:hover {
+  box-shadow: 0 0 10px rgba(215, 182, 105, 0.8);
+}
+
+
+
+.casutasubs {
+  /* ... alte stiluri ... */
+
+  /* Adaugă aici proprietatea pentru tranziție */
+  transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.glow-on-hover:hover + .casutasubs,
+.casutasubs:hover {
+  /* Stilurile pentru hover */
+  box-shadow: 0 0 10px rgba(215, 182, 105, 0.8);
+  border: 2px solid #D7B669;
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 90%; /* Ajustează dimensiunea dorită */
+  margin-top: 20px;
+}
+
+.boxulgeneratoarelor {
+  width: 30%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Restul stilurilor tale existente... */
+
+
+.casutasubs {
+  height: auto; /* sau setează o valoare specifică dacă este necesar */
+  max-height: none; /* asigură-te că nu există o limită maximă de înălțime */
+}
+
+.boxulgeneratoarelor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.casutasubs {
+  width: 150%; /* Ajustează dimensiunea dorită */
+  max-height: 400px;
+}
+
+.text-container {
+  height: auto; /* sau setează o valoare specifică dacă este necesar */
+}
+
+.buttoncopy {
+  color: black; /* sau orice altă culoare dorită */
+  font-weight: bold;
+}
+
+
+
+
+/* Stiluri pentru container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin-top: 300px; /* Modificați această valoare conform preferințelor dvs. */
+}
+
+/* Stiluri pentru casuțe */
+.boxulgeneratoarelor {
+  width: 30%;
+  margin: 20px; /* Modificați această valoare conform preferințelor dvs. */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Stiluri pentru casuțe text-container */
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Animatie gradient */
+@keyframes gradientEffect {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 200%;
+  }
+}
+
+/* Adăugați padding-top la corp */
+body {
+  padding-top: 40px; /* Ajustați această valoare în funcție de margin-top-ul container-ului */
+}
+
+
+body {
+  margin-top: 70px; /* Ajustați această valoare în funcție de înălțimea header-ului */
+}
+
+
+
+
+
+
+/* Stiluri pentru header */
+header {
+  background: #000000; /* sau culoarea dorită pentru fundalul header-ului */
+  padding: 3px 55px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.0); /* adăugați o umbră după preferințe */
+  z-index: 1000; /* asigurați-vă că header-ul este deasupra restului conținutului */
+  margin-bottom:-270px;
+  margin-top:-800px;
+  border-radius: 100%;
+  border-right: #d4af37;
+  border-top-right-radius: -20%;
+  border-radius: 0px 0px 0 400; /* Border radius for the other corners */
+}
+
+.header img {
+  height: auto; /* ajustați înălțimea imaginii la nevoie */
+}
+
+.wrapper {
+  margin-top:10px; /* Ajustați această valoare pentru a crea spațiul dorit între header și conținut */
+}
+
+body {
+  margin-top: -70px; /* Ajustați această valoare la 0 pentru a aduce tot conținutul în partea de sus */
+}
+
